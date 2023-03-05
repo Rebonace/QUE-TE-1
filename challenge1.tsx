@@ -1,16 +1,15 @@
-function hello(name: string): string {
-  return "Hello " + name;
+function hello(name: string) {
+  console.log("Hello " + name);
 }
 
-let firstName: string = "bob";
-console.log(hello(firstName));
-console.log(hello(firstName + " marley"));
+const firstName = "bob";
 
-// String with a capital "S" refers to the boxed version of string
+hello(firstName);
+hello(firstName + " marley");
 
-function concat(a: string, b: string): string {
+function concat(a: string, b: string) {
   return a + b;
 }
 
-const wcs: string = concat("Wild", concat("Code", "School"));
+const wcs = concat("Wild", concat("Code", "School"));
 console.log(wcs);
